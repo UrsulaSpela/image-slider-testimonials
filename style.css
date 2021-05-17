@@ -75,3 +75,41 @@ img{
   background: white url(icon-next.svg) no-repeat center;
   border-radius: 0 50% 50% 0;
 }
+@media only screen and (max-width: 375px){
+  body{
+    background-size: 60%;
+  }
+  #main{
+    flex-direction: column-reverse;
+    width: 310px;
+    height: 535px;
+  }
+  .slide{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .text{
+    width: 100%;
+    height: 185px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  .info{
+    flex-direction: column;
+    align-self: center;
+    font-size: 12px;
+  }
+  img{
+    width: 255px;
+    height: 255px;
+    left: 25px;
+    bottom: 60px;
+  }
+  .prev, .next{
+    height: 35px;
+    width: 35px;
+    bottom: 270px;
+    left: 0;
+  }
+}
