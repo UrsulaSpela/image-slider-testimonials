@@ -1,98 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
   display: flex;
   flex-direction: column;
   align-content: center;
   height: 100vh;
-  font-family: 'Manrope', sans-serif;
-  background: hsl(210, 46%, 95%);
   justify-content: center;
+  font-family: 'Inter', sans-serif;
 }
 #main{
   display: flex;
-  width: 730px;
-  height: 280px;
+  width: 1110px;
+  height: 540px;
   align-self: center;
-  border-radius: 15px;
-  background: white;
 }
-#image{
-  width:280px;
-  background: url(drawers.jpg) no-repeat;
-  background-size: cover;
-  border-radius: 15px 0 0 15px;
-}
-#wrapper{
-  width: 450px;
-}
-#content{
-  width: 80%;
-  margin: 8%;
-}
-h1{
-  font-size: 20px;
-  color: hsl(217, 19%, 35%);
-  margin-bottom: 20px;
-}
-h4{
-  font-size: 13px;
-  color: hsl(214, 17%, 51%);
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-.profile{
-  font-size: 13px;
-  display: flex;
-  justify-content: space-between;
-}
-#profileimg{
-  background: url(avatar-michelle.jpg) no-repeat;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  background-size: contain;
-}
-#profileinfo{
+.slide{
   display: flex;
 }
-#name{
-  margin-left: 10px;
+.text{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 625px;
+  height: 275px;
+  z-index: 10;
 }
-#share{
-  background: hsl(210, 46%, 95%) url(icon-share.svg) no-repeat center;
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-}
-#michelle{
-  color: hsl(217, 19%, 35%);
+.info{
+  display: flex;
+  font-size: 15px;
   font-weight: 700;
+  margin-top: 20px;
 }
-#date{
-  color: hsl(212, 23%, 69%);
-  font-weight: 500;
+h3{
+  font-weight: 300;
+  font-size: 32px;
+  color: hsl(240, 38%, 20%);
 }
-@media only screen and (max-width: 375px){
-  body{
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-  }
-  #main{
-    flex-direction: column;
-    width: 325px;
-    height: 515px;
-    overflow: hidden;
-  }
-  #image{
-    border-radius: 0;
-    width: 325px;
-    height: 200px;
-  }
-  #wrapper{
-    width: 325px;
-    height: 315px;
-  }
-  h4{
-    margin-bottom: 30px;
-  }
+.name{
+  color: hsl(240, 38%, 20%);
+}
+.job-title{
+  color: hsl(240, 18%, 77%);
+}
+img{
+  width: 540px;
+  height: 540px;
+  position: relative;
+  left: -55px;
+}
+.btn{
+  display: inline-block;
+  align-self: center;
+}
+.prev, .next{
+  z-index: 5;
+  height: 55px;
+  width: 55px;
+  display: inline-block;
+  position: relative;
+  bottom: 27.5px;
+  left: 110px;
+}
+.prev {
+  background: white url(icon-prev.svg) no-repeat center;
+  border-radius: 50% 0 0 50%;
+}
+.next {
+  background: white url(icon-next.svg) no-repeat center;
+  border-radius: 0 50% 50% 0;
 }
